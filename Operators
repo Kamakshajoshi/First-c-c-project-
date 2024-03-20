@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+int main
+{
+  char op,
+  double n1, n2;
+  cout<<"enter two numbers = ";
+  cin>>n1>>n2;
+  cout<<"enter the operators = ";
+  cin>>op;
+  switch (op)
+  {
+    case '+';
+       cout<<n1 <<"+" <<n2 <<"=" <<(n1+n2);
+    break;
+    case '-';
+       cout<<n1 <"-" <<n2 <<"=" <<(n1-n2);
+    break;
+    case '*';
+      cout<<n1 <<"*" <<n2 <<"=" <<(n1*n2);
+    break:
+    case '/';
+      if(n2!=0.0)
+         cout<<n1 <<"/" <<n2 <<"=" <<(n1/n2);
+      else
+         cout<<"divide by zero situation";
+    break;
+    default:
+    cout<<op <<" this operator is invalid";
+  }
+  return 0;
+}
+    
+
+
+  
